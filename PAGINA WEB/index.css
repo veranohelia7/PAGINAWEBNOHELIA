@@ -1,0 +1,110 @@
+
+.modificador{
+    width: 100%;
+    margin: 0 auto;
+
+}
+img{
+    width: 25%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cabeza{
+    width: 100%;
+    background-color: #cc8994;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    width: 100%;
+    background-color: #e3ceaf;
+    margin-bottom: 5px;
+}
+.contenido{
+    width: 100%;
+    height: 400px;
+    color: rgb(17, 5, 29);
+    margin-bottom: 10px;
+}
+
+.noticias{
+    width: 100%;
+    background-color:#cb9e67;
+    text-align: center;
+    text-transform: uppercase;
+}
+.novedades{
+    width: 100%;
+    background-color:#cc7554;
+    text-align: center;
+    text-transform: uppercase;
+}
+/******** PIE DE PAGINA*******/
+.pie{
+    background-color: #cc8994;
+    padding: 0.1em 0;
+    text-align: center;
+    margin-top: auto;
+    /*para qeu el texto este en el centro*/
+    display:flex;
+    justify-content: center;
+}
+.pie h2{
+    color: #a6819a;
+}
+/***************NOVEDADES***************/
+.nove ul{
+    padding: 5px;
+}
+.nove ul li{
+    display: block;/*se pone en linea los itens */
+    line-height: 30px;/*tamño eñ interlieado//sireve para disminuir la pantalla*/
+    
+}
+.nove ul li a{
+    color: rgb(45, 33, 6);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;/*pone en mayuscula*/
+    text-decoration: none;
+    
+}
+.nove li.active, .novedades li:hover{
+    background-color:#FFD7D7;
+    transition: .5s;/*trancision*/
+    color: blanchedalmond;
+}
+
+@media screen and (min-width: 1024px){
+    .modificador{ width: 1000px;   }
+    .cabeza{
+        display: flex;
+        justify-content: left;
+        
+    }
+    .flex-container {
+        display: flex;
+        justify-content: left;
+    }
+    img{
+        width: 20%;
+    }
+    .noticias{width: 70%;
+    margin-right: 10px;}
+    .novedades{
+        width: 29%; }
+     
+     
+}
+
+/* examen a mano y hacerlo igualiro y hacer codificar 
+menu en acordio n "amburguesa"*/
+/* el flex afecta a todod         dashboard*/
+/* aprenderse todas las lineas de codigo*/
+/* examen crear un menu responsivo*/
+/**/

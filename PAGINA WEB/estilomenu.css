@@ -1,0 +1,88 @@
+.menu{
+    background: #9b5151;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.menu ul{
+    float: right;
+    margin-right: 20px;
+}
+.menu ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.menu ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu li a.active, .menu li a:hover{
+    background: #926a6b;
+    transition: .5s;
+}
+.checkbtn{/*estilo del icono responsive*/
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*variacion de acuerdo al tamaño de pantallas*/
+@media (max-width: 952px){
+    
+    .menu ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px){
+    .checkbtn{
+        /* lo pone en bloques uno debajo del otro*/
+        display: block;
+    }
+   .menu ul{
+    /* posiciones adaptable */
+        position: fixed;
+        width: 80%;
+        height: 90vh;
+        background: #b07071;
+        top: 80px;
+        /* pregunta de examen que pasa si lo pongo 100 y no -100*/
+        /*  cuando no poneste el -100 no se*/
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .menu ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .menu nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .modificador{
+        width: 1000px;
+    }
+    
+}

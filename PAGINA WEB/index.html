@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script> 
+    <script src="jquery-3.7.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilomenu.css">
+    <title>Document</title>
+    <script>
+        $ (document).ready(function(){
+            /*efecto para el boton inicio*/
+            $('#p1').click(function(){
+            $('#contenido').load("iniciojava.html"); });
+            /*efecto para el boton nosotros*/
+            $('#p2').click(function(){
+            $('#contenido').load("nosotrosjava.html"); });
+            /*efecto para el boton galeria*/
+            $('#p3').click(function(){
+            $('#contenido').load("galeriajava.html"); });
+            
+            $('#p1n').click(function(){
+                $('#contenido').load("pastelesjava.html"); });
+            $('#p2n').click(function(){
+                $('#contenido').load("postresjava.html"); });
+             $('#p3n').click(function(){
+                 $('#contenido').load("bocaditosjava.html"); });
+        });
+                <!--load que carge el archivo html-->
+       
+    </script>
+    
+</head>
+<body>
+    
+    <header class="cabeza flex modificador"><img src="IMAGENES/logo12122.png" alt=""></header>
+    <nav class="menu flex modificador">
+        <nav class="menu modificador">
+            <!-- icono de aocordion al inicio estara oculto-->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+           <!-----------------------------------------> 
+            <ul>
+                <!-- con id solo uno y con class-->
+                <li><a href="#" id="p1">Inicio</a></li> 
+                <li><a href="#" id="p2">nosotros</a></li> 
+                <li><a href="#" id="p3">galeria</a></li> 
+            </ul>
+        </nav>
+    </nav>
+    <main class="contenido flex modificador">
+        <section class="noticias" id="contenido">
+            <article>
+                <h1>Noticias</h1>
+                <h2>Bienvenidos a Pastelería SWEET CAKE</h2>
+                 <p>Somos tu lugar ideal para disfrutar de exquisitos postres caseros.</p>
+                <p>En nuestra pastelería, cada dulce se elabora con los mejores ingredientes.</p>
+                <p>Descubre nuestra variedad de pasteles, cupcakes y mucho más.</p>
+                 <p>¡Visítanos y déjate tentar por nuestros sabores únicos!</p> <br>
+                <img src="IMAGENES/pasteleria1.jpg" alt="">
+            </article>
+        </section>
+        <aside class="novedades">
+            <h2>Novedades</h2>
+            <nav class="nove">
+                <ul>
+                     
+                    <li><a href="#" id="p1n">pasteles</a></li> 
+                    <li><a href="#" id="p2n">postres</a></li> 
+                    <li><a href="#" id="p3n">bocaditos</a></li> 
+                </ul>
+            </nav>
+        </aside>
+        <footer class="pie flex modificador">
+            <p>&copy; 2024 pasteleria. Todos los derechos reservados.</p>
+    </main>
+  
+</footer>
+</body>
+</html>
+
+
